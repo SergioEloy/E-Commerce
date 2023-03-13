@@ -1,0 +1,233 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: grid;
+    width: 75%;
+    grid-template-columns: 15fr 40fr 30fr 15fr;
+    grid-template-rows: 125px 40px 1fr;
+    background-color: rgb(245, 245, 245);
+    margin: 0 auto;
+}
+
+
+#logo {
+    height: 2.5rem;
+}
+
+.pagelogo {
+    grid-area: 1 / 1 / 2 /2 ;
+    display: flex;
+    align-items: center;
+}
+
+.pagelogo:hover {
+    opacity: 50%;
+}
+
+.elements {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    font-size: 1rem;
+    font-weight:700;
+    color: rgb(100, 100, 100);
+}
+
+.menu:hover{
+    cursor: pointer;
+    color: lightgray;
+}
+
+#blnk {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.profile {
+    grid-area: 1 / 4 / 2 / 5 ;
+    display: flex;
+    justify-content:right;
+}
+
+.cart1 {
+    margin: 0px;
+    margin-right: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+
+#graycart{
+    height: 1.5rem;
+}
+
+#graycart:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.pic{
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+#person {
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#line {
+    grid-area: 2 / 1 / 3 / 5;
+    border-top: 2px solid rgb(200, 200, 200);
+}
+
+.photos {
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+.information {
+    grid-area: 3 / 3 / 4 / 5 ;
+}
+
+#mainphoto{
+    margin: 0 auto;
+}
+#mainshoe {
+    height:30rem;
+    border-radius: 24px;
+}
+
+#shoe1, #shoe2, #shoe3, #shoe4 {
+    height: 6rem;
+    margin: .75rem;
+    border-radius: 16px;
+    border: 4px solid rgb(255, 255, 255);
+}
+
+#shoe1:hover, #shoe2:hover, #shoe3:hover, #shoe4:hover {
+    border: 4px solid red;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.smallphotos {
+    display: flex;
+    justify-items: center;
+}
+
+#scompany {
+    font-size: 1rem;
+    color: red;
+    font-weight: 750;
+}
+
+#name {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.pinfo {
+    margin-top: 0px;
+}
+
+.info {
+    margin-top: 0px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    color: rgb(100, 100, 100);
+}
+
+.pprices{
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.pdisc{
+    height: 1.5rem;
+    width: 3.5rem;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#normalp {
+    margin-top: 0px;
+    color: rgb(100, 100, 100);
+    font-weight: 700;
+    text-decoration: line-through;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.qty {
+    display: flex;
+    height: 3.5rem;
+    width: 12rem;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: rgb(220, 220, 220);
+    border-radius: 8px;
+}
+
+#minus, #plus {
+    color: red;
+    cursor: pointer;
+}
+
+.addToCart {
+    display: flex;
+    height: 3.5rem;
+    width: 20rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: red;
+    border-radius: 8px;
+    gap: 15px;
+    box-shadow: 0px 10px 5px rgba(100, 0, 0, 0.1);
+}
+
+.addToCart:hover{
+    cursor: pointer;
+}
+
+#add{
+    font-size: 1.25rem;
+    color: white;
+}
+
+#whitecart {
+    height: 1.3rem;
+}
